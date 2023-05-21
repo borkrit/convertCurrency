@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CurrencyApiService } from './currency-api.service';
-import axios from 'axios';
 
 
 @Component({
@@ -24,7 +23,6 @@ export class AppComponent {
 
 
   onChange(value:any){
-    console.log(value.value)
 
     value.id == 'countryFrom'? this.countryFrom = value.value : this.countryTo = value.value;
     this.apiCall();
@@ -37,27 +35,19 @@ export class AppComponent {
 
 
   onSetAmount(value:any){
-    console.log(value);
-
     if(value.value >0){
       this.amountHow = value.value;
-
       value.id == 'countryFrom' ? this.multiplication(value.value) : this.division(value.value);
-
-      
     }
-
   }
 
- 
+  multiplication(val:number){
+    this.resultConverter = val * this.resultObject
+  }
 
-    multiplication(val:number){
-      this.resultConverter = val * this.resultObject
-
-    }
-    division(val:number){
-          this.amountHow = val  / this.resultObject ; 
-    }
+  division(val:number){
+    this.amountHow = val  / this.resultObject ; 
+  }
   
 
   apiCall(){
