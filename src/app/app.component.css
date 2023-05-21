@@ -1,0 +1,26 @@
+.currency{
+    max-width: 45%;
+    width: 100%;
+}
+main{
+    background: linear-gradient( #6d61613e, #b4abab1f);
+    height: 90vh;
+    padding-top: 20px;
+}
+.result{
+    font-size: 20px;
+}
+.container{
+    max-width: 800px;
+    margin-inline: auto;
+   
+}
+.converter{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+

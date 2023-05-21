@@ -1,0 +1,19 @@
+<div class="currency">
+    <h2 class="title">
+        
+    {{countryConvert}} 
+    </h2>
+    
+  <div class="input">
+    <select name={{amountFrom}} id={{id}} (change)="onChange($event)" >
+      <option  [selected]="country === countryConvert"   *ngFor="let country of countries; let i = index"   value="{{country}}"   >{{country}}</option>
+      
+    </select>
+
+
+    <input type="number" name="" id={{id}} (change)="onSetAmount($event)" value="{{amount}}">
+
+  </div>
+  
+   
+  </div>

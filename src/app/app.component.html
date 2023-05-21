@@ -1,0 +1,37 @@
+
+<app-header />
+
+<main>
+  <div class="container">
+
+    <div class="result">
+      {{amountHow}} {{countryFrom}} to {{resultConverter}}{{countryTo}}
+    </div>
+    <div class="converter">
+
+      <app-input-select 
+      [amount]="amountHow"
+      [countryConvert]=countryFrom 
+      [countries]=countries 
+      (childEvent)="onSetAmount($event)" 
+      (childEvents)="onChange($event)" />
+
+
+      <app-input-select 
+      [amount]="resultConverter"
+      [id]="'countryTo'" 
+      [countryConvert]=countryTo 
+      [countries]=countries 
+      (childEvent)="onSetAmount($event)" 
+      (childEvents)="onChange($event)" />
+  
+  
+    </div>
+
+  
+  </div>
+  
+  
+  
+</main>
+

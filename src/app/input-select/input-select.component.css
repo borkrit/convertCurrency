@@ -1,0 +1,19 @@
+.input select, .input input{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+.input input{
+    margin-left: 10px;
+    width: 100%;
+}
+.input{
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    display: flex;
+}
+
+.amount{
+    width: 100%;
+    display: block;
+}
