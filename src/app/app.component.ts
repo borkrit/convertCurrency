@@ -17,7 +17,7 @@ export class AppComponent {
   resultConverter:any = 0;
   amountHow: number = 100;
   countries:any = ['USD','EUR','UAH'];
-  resultObject:any = 0;
+  resultObject:any = 3.2;
 
 
 
@@ -46,6 +46,7 @@ export class AppComponent {
   }
 
   division(val:number){
+    this.resultConverter = val;
     this.amountHow = val  / this.resultObject ; 
   }
   
