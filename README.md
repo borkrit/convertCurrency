@@ -6,6 +6,8 @@ Converter use USD/EUR/UAH currency
 
 API https://apilayer.com/marketplace/exchangerates_data-api#documentation-tab
 
+But at the moment  I have a problem because I have 250 api call per month
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
