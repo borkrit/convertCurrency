@@ -17,7 +17,7 @@ export class AppComponent {
   resultConverter:any = 0;
   amountHow: number = 100;
   countries:any = ['USD','EUR','UAH'];
-  resultObject:any = 3.2;
+  resultObject:any = 0;
 
 
 
